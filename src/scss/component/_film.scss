@@ -1,0 +1,45 @@
+.film{
+  background-image: url('../img/game/film.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 750px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: hidden;
+  justify-content: center;
+  pointer-events: none;
+
+  @include mq(only-md){
+    background-size: 550px;
+    height: 250px;
+    width: 100%;
+  }
+
+  &__list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    @include mq(only-md){
+      height: 250px;
+    }
+  }
+  
+  &__listItem{
+    margin: 0 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+
+    &:nth-child(1),
+    &:nth-child(2){
+      @include mq(only-md){ display: none;}
+    }
+
+    img{
+      vertical-align: bottom;
+      @include mq(only-md){
+        width: 310px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="191" viewBox="0 0 375 191">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0068b7;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="curve_sp.svg" class="cls-1" d="M0,621a310.516,310.516,0,0,0,375,0V812H0V621Zm187.5,0" transform="translate(0 -621)"/>
+</svg>

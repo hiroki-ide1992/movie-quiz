@@ -1,0 +1,58 @@
+/* ゲーム画面の映画スクショアニメーション*/
+@keyframes bgiLoop {
+  0% { background-position: 0 0;}
+100% { background-position: 2160px 0px;}
+}
+
+/* フェードダウン */
+@keyframes fadeInDownOrigin {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__fadeInDownOrigin {
+  -webkit-animation-name:fadeInDownOrigin;
+  animation-name: fadeInDownOrigin;
+}
+
+@keyframes fadeInLeftOrigin {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-30%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__fadeInLeftOrigin {
+  -webkit-animation-name: fadeInLeftOrigin;
+  animation-name: fadeInLeftOrigin;
+}
+
+@-webkit-keyframes fadeInOrigin {
+  from {
+    opacity: 0; }
+  to {
+    opacity: .4; } }
+
+@keyframes fadeInOrigin {
+  from {
+    opacity: 0; }
+  to {
+    opacity: .4; } }
+
+.animate__fadeInOrigin {
+  -webkit-animation-name: fadeInOrigin;
+  animation-name: fadeInOrigin; }

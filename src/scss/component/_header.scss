@@ -1,0 +1,71 @@
+
+.header{
+  background-color: #75dfff;
+  color: #ffffff;
+  position: relative;
+  @include mq(only-md){
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgba(0,0,0,0);
+    padding-bottom: 25px;
+  }
+
+  &__inner{
+    width: 100%;
+    max-width: 1024px;
+    padding: 15px 40px 0px 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mq(only-md){
+      background-color: #75dfff;
+      padding: 15px 15px 0px 15px;
+    }
+  }
+
+  &__exit{
+    font-size: 2rem;
+    color: #ffffff;
+    @include mq(only-md){
+      font-size: 1.8rem;
+    }
+  }
+
+  &__box{
+    display: flex;
+  }
+
+  &__state{
+    display: flex;
+    align-items: center;
+
+    & + .header__state{
+      margin-left: 20px;
+    }
+  }
+
+  &__stateName{
+    font-size: 2rem;
+    margin-right: 10px;
+    @include mq(only-md){
+      font-size: 1.8rem;
+    }
+  }
+
+  &__stateValue{
+    font-size: 3rem;
+    @include mq(only-md){
+      font-size: 2.2rem;
+    }
+  }
+
+  &__borderBack{
+    position: absolute;
+    transform: translate(0px, 3px);
+  }
+  &__borderTop{
+    position: absolute;
+    transform: translate(0px, -1px);
+  }
+}

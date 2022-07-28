@@ -1,0 +1,38 @@
+@include mq(only-lg){
+
+  @for $i from 0 through 20 {
+    .pt-lg-#{$i*5}{
+      padding-top: #{$i*5}px !important;
+    }
+    .pb-lg-#{$i*5}{
+      padding-bottom: #{$i*5}px !important;
+    }
+  }
+
+}
+
+@include mq(only-md){
+
+  @for $i from 0 through 20 {
+    .pt-md-#{$i*5}{
+      padding-top: #{$i*5}px !important;
+    }
+    .pb-md-#{$i*5}{
+      padding-bottom: #{$i*5}px !important;
+    }
+  }
+
+}
+
+@include mq(only-sm){
+
+  @for $i from 0 through 20 {
+    .pt-sm-#{$i*5}{
+      padding-top: #{$i*5}px !important;
+    }
+    .pb-sm-#{$i*5}{
+      padding-bottom: #{$i*5}px !important;
+    }
+  }
+
+}

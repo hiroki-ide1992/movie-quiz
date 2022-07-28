@@ -1,0 +1,53 @@
+.top{
+  min-height: 100vh;
+  background-image: url('../img/top/curve.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  position: relative;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  @include mq(smart){
+    background-image: url('../img/top/curve_sp.svg');
+  }
+
+  &::-webkit-scrollbar {
+    display:none;
+  }
+
+  &__inner{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @include mq(only-md){
+      padding: 40px 20px 20px 20px;
+    }
+  }
+
+  &__h1{
+    max-width: 496px;
+    @include mq(only-md){
+      max-width: 300px;
+    }
+    img{
+      width: 100%;
+    }
+  }
+
+  &__btnBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    & + .top__btnBox{
+      margin-top: 30px;
+      @include mq(only-md){
+        margin-top: 20px;
+      }
+    }
+  }
+}

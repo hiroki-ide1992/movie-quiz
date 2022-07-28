@@ -1,0 +1,25 @@
+.card{
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  --animate-duration: .5s;
+
+
+  @include mq(only-md){
+    padding: 10px;
+  }
+
+  &--border{
+    border: double 10px #75dfff;
+    @include mq(only-md){
+      border: double 6px #75dfff;
+    }
+  }
+
+  &--dot{
+    background-color   : #ffffff;
+    background-image   : radial-gradient(rgba(0, 0, 0, 0.12) 7%, transparent 10%),radial-gradient(rgba(0, 0, 0, 0.12) 7%, transparent 10%);
+    background-position: 0 0, 9px 9px;
+    background-size    : 18px 18px;
+  }
+}

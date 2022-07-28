@@ -1,0 +1,60 @@
+@mixin circleBase {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-weight: bold;
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  transition: .3s;
+  pointer-events: none;
+  font-size: 10rem;
+}
+
+.timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  #ffffff;
+
+  &__box{
+    text-align: center;
+    position: relative;
+  }
+
+  &__text{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 3　px;
+  }
+
+  &__seconds{
+    font-size: 4rem;
+  }
+
+  &__five{
+    @include circleBase;
+    opacity: .4;
+    border: 15px double #ffffff;
+  }
+
+  &__end{
+    @include circleBase;
+    border: 15px double #ff0e60;
+    color: #ffffff;
+  }
+
+  &__bonus{
+    position: absolute;
+    top: 1em;
+    right: -1.5em;
+    font-size: 2rem;
+  }
+}
+

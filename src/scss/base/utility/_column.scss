@@ -1,0 +1,10 @@
+@include mq(only-lg){
+  @for $i from 1 through 12 {
+    .col-lg-#{$i}{ width: #{$i / 0.12}#{'%'};}
+  }
+}
+@include mq(only-md){
+  @for $i from 1 through 12 {
+    .col-md-#{$i}{ width: #{$i / 0.12}#{'%'};}
+  }
+}

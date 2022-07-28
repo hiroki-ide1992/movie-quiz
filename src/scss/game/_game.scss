@@ -1,0 +1,52 @@
+
+.game{
+  background-image: url('../img/game/scene.jpg');
+  background-color: #000000;
+  height: 480px;
+  margin: 10px 0;
+  animation: bgiLoop 60s linear infinite;
+  color: #ffffff;
+
+  @include mq(only-md){
+    margin: 0;
+  }
+
+  &__inner{
+    width: 100%;
+    max-width: 1024px;
+    padding:30px 40px 10px 40px;
+    margin: 0 auto;
+    position: relative;
+
+    @include mq(only-md){
+      padding:15px 0px 10px 0px;
+    }
+  }
+
+  &__main{
+    --animate-duration: .5s;
+    opacity: 0;
+  }
+
+  &__cover{
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+  }
+
+  &__container{
+    margin-bottom: 20px;
+    @include mq(only-md){
+      margin: 0 15px 10px 15px;
+      &--margin0{
+        margin: 0 !important;
+      }
+    }
+  }
+
+  &__residue{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+}
+

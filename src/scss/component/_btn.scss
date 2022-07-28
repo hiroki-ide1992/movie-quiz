@@ -1,0 +1,30 @@
+@mixin btnBase($fontSize:2rem, $width: 200px, $color: #333333, $border: #333333,){
+  font-size: $fontSize;
+  max-width: $width;
+  color: $color;
+  border:2px solid $border;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  border-radius: 1000px;
+  padding: 10px 40px;
+  width: 100%;
+}
+
+.btn01{
+  @include btnBase(2rem, 300px, $mainBlue, $mainBlue);
+  cursor: pointer;
+  background-color: #ffffff;
+  @include mq(only-md){
+    font-size: 1.6rem;
+    max-width: 240px;
+  }
+}
+
+.btn02{
+  @include btnBase(2rem, 300px, #ffffff, #ffffff);
+  @include mq(only-md){
+    font-size: 1.6rem;
+    max-width: 240px;
+  }
+}
