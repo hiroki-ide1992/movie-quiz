@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="594" viewBox="0 0 290 594">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffd6a6;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #d7ffc5;
+      }
+    </style>
+  </defs>
+  <path id="楕円形_3_のコピー_2" data-name="楕円形 3 のコピー 2" class="cls-1" d="M-217.6,19.094c147.719,0,267.468,119.764,267.468,267.5s-119.75,267.5-267.468,267.5-267.468-119.764-267.468-267.5S-365.318,19.094-217.6,19.094Z"/>
+  <circle id="楕円形_3_のコピー_5" data-name="楕円形 3 のコピー 5" class="cls-2" cx="506.656" cy="286.594" r="267.469"/>
+</svg>
