@@ -16,7 +16,7 @@ https://dquiz.hiroki-ide.site/
 ## 技術目標
 
 ・React の CreateApp コマンドを使用せず、Webpack を用いた build 環境を学習する<br>
-・クイズデータを API 化し、データとコンポーネントを切り離した設計を実装する<br>
+・クイズデータを TS のオブジェクトのデータとしてまとめ、データとコンポーネントを切り離した設計を実装する<br>
 ・useContext を用いた状態管理の方法を体系的に理解する<br>
 ・animate.css を用いてアニメーションが豊富なページにしたい
 
